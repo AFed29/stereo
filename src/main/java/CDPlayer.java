@@ -1,16 +1,14 @@
-public class CDPlayer {
-    private String make;
-    private String model;
+public class CDPlayer extends Component{
+
     private int capacity;
 
     public CDPlayer(String make, String model, int capacity) {
-        this.make = make;
-        this.model = model;
+        super(make, model);
         this.capacity = capacity;
     }
-
 
     public String play() {
         return "Playing a CD";
     }
+
 }
