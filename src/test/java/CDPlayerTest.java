@@ -27,4 +27,24 @@ public class CDPlayerTest {
         assertEquals("Playing a CD", cdPlayer.play());
     }
 
+    @Test
+    public void canPause() {
+        assertEquals("Pausing CD", cdPlayer.pause());
+    }
+
+    @Test
+    public void canFastForward() {
+        assertEquals("Fast-forwarding CD", cdPlayer.fastForward());
+    }
+
+    @Test
+    public void canRewind() {
+        assertEquals("Rewinding CD", cdPlayer.rewind());
+    }
+
+    @Test
+    public void canEject() {
+        assertEquals("CD has been ejected", cdPlayer.eject());
+    }
+
 }

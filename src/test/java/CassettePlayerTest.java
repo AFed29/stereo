@@ -27,4 +27,23 @@ public class CassettePlayerTest {
         assertEquals("Playing a cassette", cassettePlayer.play());
     }
 
+    @Test
+    public void canPause() {
+        assertEquals("Pausing cassette", cassettePlayer.pause());
+    }
+
+    @Test
+    public void canFastForward() {
+        assertEquals("Fast-forwarding cassette", cassettePlayer.fastForward());
+    }
+
+    @Test
+    public void canRewind() {
+        assertEquals("Rewinding cassette", cassettePlayer.rewind());
+    }
+
+    @Test
+    public void canEject() {
+        assertEquals("Cassette has been ejected", cassettePlayer.eject());
+    }
 }
